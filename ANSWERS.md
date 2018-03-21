@@ -1,6 +1,8 @@
 # Q0: Why is this error being thrown?
+We haven't created the Pokemon model yet, so when we try calling Pokemon.where, it says Pokemon isn't initialized yet. 
 
 # Q1: How are the random Pokemon appearing? What is the common factor between all the possible Pokemon that appear? *
+In home_controller, we get the list of all pokemon that don't have a trainer. We then sample this list and display the pokemon.
 
 # Question 2a: What does the following line do "<%= button_to "Throw a Pokeball!", capture_path(id: @pokemon), :class => "button medium", :method => :patch %>"? Be specific about what "capture_path(id: @pokemon)" is doing. If you're having trouble, look at the Help section in the README.
 

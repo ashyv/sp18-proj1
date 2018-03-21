@@ -1,0 +1,12 @@
+class PokemonController < ApplicationController
+	def capture:
+		pokemon = Pokemon.find(params[:id])
+		trainer = current_trainer
+		pokemon.update!(pokemon_params)
+		
+	end
+
+	def pokemon_params
+      params.require(:id).permit(:trainer, :name, :level, :ndex)
+    end
+end
