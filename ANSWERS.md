@@ -14,7 +14,9 @@ Machu
 I passed in trainer_path(current_trainer.id). The path needed to be trainer_path so that it would call the "/trainers/:id" route. 
 
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
+At the bottom of views/layouts/application.html.erb, there is line that renders layout/messages. Inside layout/messages.html.erb, it iterates over every flash message and displays it in an alert box at the top of the page. 
 
 # Give us feedback on the project and decal below!
+Great project! Thanks for hosting the extra OH and helping me finish it. 
 
 # Extra credit: Link your Heroku deployed app
